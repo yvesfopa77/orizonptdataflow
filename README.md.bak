@@ -38,12 +38,16 @@ As the title stated, this data flow is triggered by DESFire EV3 card presented t
 
 ## POC (Proof of Concept) testing
 
-To run POC testing, I've build 2 app :
+**To run POC testing, I've build 2 app :**
 
- 1. An Arduino application to simulate BLE communication by Payment Terminal, [see code here](%28https://github.com/yvesfopa77/orizonbleperipheralpoc/blob/main/sketch_aug19a/sketch_aug19a.ino)
+ 1. An Arduino application to simulate BLE communication by Payment Terminal, [see code here](https://github.com/yvesfopa77/orizonbleperipheralpoc/blob/main/sketch_aug19a/sketch_aug19a.ino)
 
  2. An Android application to simulate BLC communication by Payment Gateway, [see code here](https://github.com/yvesfopa77/orizonbleclientpoc)
 
+**How to run Arduino BLE application ?**
+
+I've used an Arduino Nano 33 BLE Rev2 board.
+Connected to the board using Arduino IDE, I've deployed the above mentionned code (see comment in the code to understand what the code does). Basically to code allow to receive data via BLE and Notify any device who is connected to the board and has subscribed to notification.
 
 		
 
