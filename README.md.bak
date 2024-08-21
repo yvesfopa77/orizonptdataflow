@@ -47,7 +47,22 @@ As the title stated, this data flow is triggered by DESFire EV3 card presented t
 **How to run Arduino BLE application ?**
 
 I've used an Arduino Nano 33 BLE Rev2 board.
-Connected to the board using Arduino IDE, I've deployed the above mentionned code (see comment in the code to understand what the code does). Basically to code allow to receive data via BLE and Notify any device who is connected to the board and has subscribed to notification.
+Connected to the board using Arduino IDE, I've deployed the above mentioned code (see comment in the code to understand what the code does). Basically to code allow to receive data via BLE and Notify any device who is connected to the board and has subscribed to notification.
+1) Install Arduino Nano 33 BLE Rev2 board
+![board install](Arduino%20Nano%20BLE%20Rev2%202024-08-21%20224506.png)
+
+2) Compile and upload the code (see above) to the board and open serial console to send and listen message to/from Android Payment Gateway.
+![IDE](Arduino%20IDE%202024-08-21%20225010.png)
+
+**How to run Android BLE application**
+
+1) Application install
+
+Option 1 : You have been invited as tester to be able to download android app from Google Play Store [Download link](https://play.google.com/apps/internaltest/4700155119323285744)
+Option 2 : Build the code from the repo (see above) and run it using your preferred IDE (Visual Studio Code, Android Studio, or else)
+
+2) Run application
+
 
 		
 
