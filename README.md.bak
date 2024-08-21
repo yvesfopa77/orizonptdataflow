@@ -63,10 +63,22 @@ Option 2 : Build the code from the repo (see above) and run it using your prefer
 
 2) Run application
 
+ 1. Launch the application on Android device, approve the permissions requests.
+ 2. Make sure Arduino board is on.
+ 3. Once the application starts, it will scan for all reachable BLE device in the near, Arduino board should be listed with the name `ORIZON_TERMINAL`, click on connect to connect to it and you will see available "BLE characteristics" listed. Select the `7DEF8317-7300-4EE6-8849-46FACE74CA2A"` service and click on notify to start listening on strings sent from Arduino board (via connected Arduino IDE console)
 
-		
+![Android BLE app](Android%20BLE%202024-08-21%20232351.png)
 
+**POC testing limitation**
 
+The main limitation of the POC is the fact that data transmission from Payment Terminal BLE to Payment Gateway (Step 04 above) implementation doesn't take into consideration that `A characteristic value can be up to 512 bytes long.` This means Payment Terminal BLE Step 04 implementation should consider sending data in multiple chuncks.
 
+**Testing from POC Terminal** 
 
+The above testing process with Arduino has been provided for demonstration purpose. 
+To run proper POC testing, use ORIZON Payment POC Terminal with provided Android Payment Gateway
 
+## Documentation and reading
+
+[BLE reading](https://www.arduino.cc/reference/en/libraries/arduinoble/)		
+[Android BLE reading](https://punchthrough.com/android-ble-guide/)

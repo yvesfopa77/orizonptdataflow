@@ -80,5 +80,6 @@ To run proper POC testing, use ORIZON Payment POC Terminal with provided Android
 
 ## Documentation and reading
 
-[BLE reading](https://www.arduino.cc/reference/en/libraries/arduinoble/)		
+[BLE reading](https://www.arduino.cc/reference/en/libraries/arduinoble/)
+		
 [Android BLE reading](https://punchthrough.com/android-ble-guide/)
