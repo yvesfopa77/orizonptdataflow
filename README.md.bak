@@ -25,16 +25,15 @@ As the title stated, this data flow is triggered by DESFire EV3 card presented t
 ![Figure1](Data%20Flow%202024-08-21%20205156.png)
 
  1. Step 01 : DESFire ev3 card presented
-
-Card detected by NFC reader chip. Read card data
-
+		Card detected by NFC reader chip. Read card data
  2. Step 02 : Encryption process
-
-To be defined
-
+		To be defined
  3. Step 03 : offline transaction trial
+		To be defined
+ 4. Step 04 : online transaction data transmission
 
-To be defined
+		
+
 
 
 

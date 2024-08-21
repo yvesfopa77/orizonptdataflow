@@ -24,13 +24,19 @@ There are 2 data flow between the Payment Terminal and the Payment Gateway, one 
 As the title stated, this data flow is triggered by DESFire EV3 card presented to the PN7642 chip NFC reader/writer on the Payment Terminal.
 ![Figure1](Data%20Flow%202024-08-21%20205156.png)
 
- 1. Step 01 : DESFire ev3 card presented
-		Card detected by NFC reader chip. Read card data
- 2. Step 02 : Encryption process
-		To be defined
- 3. Step 03 : offline transaction trial
-		To be defined
- 4. Step 04 : online transaction data transmission
+ 1. Step 01 : Card detected by NFC reader chip. Read card data
+ 2. Step 02 : To be defined
+ 3. Step 03 : To be defined
+ 4. Step 04 : Transmit to Payment Gateway data read at step 01 and processed at step 03
+ 5. Step 05 : Data reception by Payment Gateway
+ 6. Step 06 : To be defined
+ 7. Step 07 : To be defined
+ 8. Step 08 : Transaction data sent to Payment Terminal (via BLE)
+ 9. Step 09 : Transaction data received by Payment Terminal
+ 10. Step 10 : To be defined
+ 11. Step 11 : DESFire ev3 card data update
+
+  
 
 		
 
