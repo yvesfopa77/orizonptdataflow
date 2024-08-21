@@ -5,8 +5,10 @@ Version : 1.0
 Date : 21 aug 2024
 
 **Introduction**
+
 The purpose of this document is to present the data flow between the payment terminal and the mobile application gateway.
 Demos applications are also provided below to allow development team to test prototypes they are working on.
+
 **Terminology**
 Some terms are used in our documentation, so it's good to define them below
 Payment Terminal : NFC device powered with NXP (PN7642 chip) to be used to acquire payment requests from MIFARE® _DESFire_® _EV3_ card
