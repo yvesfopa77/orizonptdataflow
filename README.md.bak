@@ -36,7 +36,14 @@ As the title stated, this data flow is triggered by DESFire EV3 card presented t
  10. Step 10 : To be defined
  11. Step 11 : DESFire ev3 card data update
 
-  
+## POC (Proof of Concept) testing
+
+To run POC testing, I've build 2 app :
+
+ 1. An Arduino application to simulate BLE communication by Payment Terminal, [see code here](%28https://github.com/yvesfopa77/orizonbleperipheralpoc/blob/main/sketch_aug19a/sketch_aug19a.ino)
+
+ 2. An Android application to simulate BLC communication by Payment Gateway, [see code here](https://github.com/yvesfopa77/orizonbleclientpoc)
+
 
 		
 
