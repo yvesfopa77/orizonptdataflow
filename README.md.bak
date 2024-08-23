@@ -1,8 +1,8 @@
 # ORIZON Payment Terminal Data Flows 
 
 *Author : Yves Fopa
-Version : 1.0
-Date : 21 aug 2024*
+Version : 1.2
+Date : 23 aug 2024*
 
 **Introduction**
 
@@ -11,15 +11,13 @@ Demos applications are also provided below to allow development team to test pro
 
 **Terminology**
 
-Some terms are used in our documentation, so it's good to define them below 
-
+Some terms are used in our documentation, so it's good to define them below
 Payment Terminal : NFC device powered with NXP (PN7642 chip) to be used to acquire payment requests from MIFARE® _DESFire_® _EV3_ card
-
 Payment Gateway : Mobile app deployed on android device to serve as gateway to backend payment system. Connection between Payment Terminal and Payment Gateway is done via Bluetooth (BLE)
 
 ## Data Flows
 
-There are 2 data flow between the Payment Terminal and the Payment Gateway, one data flow for card payment and a second data flow for Payment Terminal synchronisation with backend payment system.
+There are 2 data flow between the Payment Terminal and the Payment Gateway, **DESFire EV3 Card initiated Data Flow** and a **Payment Terminal initiated SYNC Data Flow**.
 
 **DESFire EV3 Card initiated Data Flow**
 
@@ -37,6 +35,23 @@ As the title stated, this data flow is triggered by DESFire EV3 card presented t
  9. Step 09 : Transaction data received by Payment Terminal
  10. Step 10 : To be defined
  11. Step 11 : DESFire ev3 card data update
+
+**Payment Terminal initiated SYNC Data Flow**
+
+As the title states, this data flow is triggered by the Payment Terminal itself (means without DESFire ev3  card being presented). This flow is used to synchronize the Payment Terminal with the backend payment to push all registered offline transactions.
+![Figure2](Data%20Flow%202024-08-23%20142748.png)
+
+ 1. Step 01 : Button pressed
+ 2. Step 02 : To be defined
+ 3. Step 03 : Transmit to Payment Gateway data read at step 01 and processed at step 02
+ 4. Step 04 : Data reception by Payment Gateway
+ 5. Step 05 : To be defined
+ 6. Step 06 : To be defined
+ 7. Step 07 : Transaction data sent to Payment Terminal (via BLE)
+ 8. Step 08 : Transaction data received by Payment Terminal
+ 9. Step 09 : To be defined
+ 10. Step 10 : To be defined
+
 
 ## POC (Proof of Concept) testing
 
@@ -85,3 +100,7 @@ To run proper POC testing, use ORIZON Payment POC Terminal with provided Android
 [BLE reading](https://www.arduino.cc/reference/en/libraries/arduinoble/)
 		
 [Android BLE reading](https://punchthrough.com/android-ble-guide/)
+
+
+
+
