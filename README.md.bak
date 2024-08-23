@@ -12,8 +12,9 @@ Demos applications are also provided below to allow development team to test pro
 **Terminology**
 
 Some terms are used in our documentation, so it's good to define them below
-Payment Terminal : NFC device powered with NXP (PN7642 chip) to be used to acquire payment requests from MIFARE® _DESFire_® _EV3_ card
-Payment Gateway : Mobile app deployed on android device to serve as gateway to backend payment system. Connection between Payment Terminal and Payment Gateway is done via Bluetooth (BLE)
+*Payment Terminal :* NFC device powered with NXP (PN7642 chip) to be used to acquire payment requests from MIFARE® ESFire® EV3 card
+
+*Payment Gateway :* Mobile app deployed on android device to serve as gateway to backend payment system. Connection between Payment Terminal and Payment Gateway is done via Bluetooth (BLE)
 
 ## Data Flows
 
