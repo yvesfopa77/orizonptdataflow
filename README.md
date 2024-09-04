@@ -59,9 +59,9 @@ As the title states, this data flow is triggered by the Payment Terminal itself 
 
 **To run POC testing, I've build 2 app :**
 
- 1. An Arduino application to simulate BLE communication by Payment Terminal, [see code here](https://github.com/yvesfopa77/YLIQObleperipheralpoc/blob/main/sketch_aug19a/sketch_aug19a.ino)
+ 1. An Arduino application to simulate BLE communication by Payment Terminal, [see code here](https://github.com/yvesfopa77/orizonbleperipheralpoc/blob/main/sketch_aug19a/sketch_aug19a.ino)
 
- 2. An Android application to simulate BLC communication by Payment Gateway, [see code here](https://github.com/yvesfopa77/YLIQObleclientpoc)
+ 2. An Android application to simulate BLC communication by Payment Gateway, [see code here](https://github.com/yvesfopa77/orizonbleclientpoc)
 
 **How to run Arduino BLE application ?**
 
