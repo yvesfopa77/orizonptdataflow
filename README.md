@@ -1,4 +1,4 @@
-# ORIZON Payment Terminal Data Flows 
+# YLIQO Payment Terminal Data Flows 
 
 *Author : Yves Fopa
 Version : 1.2
@@ -59,9 +59,9 @@ As the title states, this data flow is triggered by the Payment Terminal itself 
 
 **To run POC testing, I've build 2 app :**
 
- 1. An Arduino application to simulate BLE communication by Payment Terminal, [see code here](https://github.com/yvesfopa77/orizonbleperipheralpoc/blob/main/sketch_aug19a/sketch_aug19a.ino)
+ 1. An Arduino application to simulate BLE communication by Payment Terminal, [see code here](https://github.com/yvesfopa77/YLIQObleperipheralpoc/blob/main/sketch_aug19a/sketch_aug19a.ino)
 
- 2. An Android application to simulate BLC communication by Payment Gateway, [see code here](https://github.com/yvesfopa77/orizonbleclientpoc)
+ 2. An Android application to simulate BLC communication by Payment Gateway, [see code here](https://github.com/yvesfopa77/YLIQObleclientpoc)
 
 **How to run Arduino BLE application ?**
 
@@ -84,7 +84,7 @@ Option 2 : Build the code from the repo (see above) and run it using your prefer
 
  1. Launch the application on Android device, approve the permissions requests.
  2. Make sure Arduino board is on.
- 3. Once the application starts, it will scan for all reachable BLE device in the near, Arduino board should be listed with the name `ORIZON_TERMINAL`, click on connect to connect to it and you will see available "BLE characteristics" listed. Select the `7DEF8317-7300-4EE6-8849-46FACE74CA2A"` service and click on notify to start listening on strings sent from Arduino board (via connected Arduino IDE console)
+ 3. Once the application starts, it will scan for all reachable BLE device in the near, Arduino board should be listed with the name `YLIQO_TERMINAL`, click on connect to connect to it and you will see available "BLE characteristics" listed. Select the `7DEF8317-7300-4EE6-8849-46FACE74CA2A"` service and click on notify to start listening on strings sent from Arduino board (via connected Arduino IDE console)
 
 ![Android BLE app](Android%20BLE%202024-08-21%20232351.png)
 
@@ -95,7 +95,7 @@ The main limitation of the POC is the fact that data transmission from Payment T
 **Testing from POC Terminal** 
 
 The above testing process with Arduino has been provided for demonstration purpose. 
-To run proper POC testing, use ORIZON Payment POC Terminal with provided Android Payment Gateway
+To run proper POC testing, use YLIQO Payment POC Terminal with provided Android Payment Gateway
 
 ## Documentation and reading
 
